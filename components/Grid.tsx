@@ -7,7 +7,7 @@ const Grid = () => {
     <div >
         <BentoGrid>
 {gridItems.map
-((item,i) =>
+((item) =>
  (<BentoGridItem
     id={item.id}
     key = {item.id} 

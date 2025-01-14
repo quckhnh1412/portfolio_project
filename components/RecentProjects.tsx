@@ -1,7 +1,6 @@
 import React from 'react'
 import {projects} from "@/data" 
 import { PinContainer } from './ui/3d-pin'
-import { describe } from 'node:test'
 import { FaLocationArrow } from 'react-icons/fa'
 const RecentProjects = () => {
   return (
