@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { BackgroundGradientAnimation } from "./GradientBG";
 import { MagicButton } from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import Globe from "./globe";
 
 export const BentoGrid = ({
   className,
@@ -81,6 +82,9 @@ export const BentoGridItem = ({
                     />
                 )}
             </div>
+            {id === 2 && (
+              <Globe className="top-20" />
+            )}
             {id === 6 && (
                 <BackgroundGradientAnimation>
                     <div className="absolute z-50 flex items-center justify-center text-white font-bold"></div>

@@ -3,9 +3,45 @@ import {Spotlight} from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { MagicButton } from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import {IconCloud} from './ui/icon-cloud'
 const Hero = () => {
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  );
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-12">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -38,12 +74,13 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-
-      <div className="flex justify-center relative my-20 z-10">
+    
+      <div className="flex justify-center relative my-20 z-10 ">
+      <div className="relative flex size-full max-w-lg justify-center overflow-hidden   bg-inherit scale-150 ">
+      <IconCloud images={images} />
+    </div>
         <div className="max-w-[95vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            My portfolio was created with Next.js and Tailwind
-          </p>
+          
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -66,6 +103,9 @@ const Hero = () => {
               position="right"
             />
           </a>
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 mt-10">
+            Created with <span className='font-bold'>Next.js</span>  and <span className='font-bold'>Tailwind Css</span>
+          </p>
         </div>
       </div>
     </div>
