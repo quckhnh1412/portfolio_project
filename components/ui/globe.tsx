@@ -46,14 +46,14 @@ export default function Globe({
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
   const [r, setR] = useState(0);
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const updatePointerInteraction = (value: any) => {
     pointerInteracting.current = value;
     if (canvasRef.current) {
       canvasRef.current.style.cursor = value ? "grabbing" : "grab";
     }
   };
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const updateMovement = (clientX: any) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
@@ -63,6 +63,7 @@ export default function Globe({
   };
 
   const onRender = useCallback(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (state: Record<string, any>) => {
       if (!pointerInteracting.current) phi += 0.005;
       state.phi = phi + r;
