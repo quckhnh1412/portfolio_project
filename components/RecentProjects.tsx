@@ -22,7 +22,7 @@ const RecentProjects = () => {
                             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
                                 <img src="/bg.png" alt="bg-img"/>
                             </div>
-                            <img src={img} className='z-10 absolute bottom-0' alt="" />
+                            <img src={img} className='z-10 absolute bottom-0 h-full' alt="" />
                             
                         </div>
                         <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>

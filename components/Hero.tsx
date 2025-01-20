@@ -41,7 +41,7 @@ const Hero = () => {
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
   );
   return (
-    <div className="pb-20 pt-12">
+    <div className="pb-20 pt-28">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -74,10 +74,17 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-    
+      
+
+
       <div className="flex justify-center relative my-20 z-10 ">
-      <div className="relative flex size-full max-w-lg justify-center overflow-hidden   bg-inherit scale-150 ">
-      <IconCloud images={images} />
+
+      <div className="absolute flex size-full max-w-lg justify-center overflow-hidden   bg-inherit scale-[300%] -z-20 opacity-70">
+      <IconCloud  images={images} />
+    </div>
+    <div className="relative flex  max-w-lg justify-center overflow-hidden w-[300px] h-[300px]  bg-inherit rounded-full mr-48 ">
+      <img src="./portrait.jpg" className="w-full h-full object-cover opacity-[0.8]" 
+    alt="Portrait" />
     </div>
         <div className="max-w-[95vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           
@@ -88,12 +95,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Hi! I'm Bùi Quốc Khánh"
+            className="text-center text-[60px] font-extrabold md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Bùi Quốc Khánh, a Web Developer from in Hồ Chí Minh city.
+            a Web Developer from in Hồ Chí Minh city.
           </p>
 
           <a href="#projects">
