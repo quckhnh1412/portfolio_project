@@ -91,7 +91,7 @@ export const navItems = [
       des: "Website for seller to choose products and managing bills, products  using Node.js and MongoDB",
       img: "/node-project.png",
       iconLists: ["nodejs.svg","/html.svg","/css.svg","/js.svg","/mongodb.svg"],
-      link: "https://github.com/quckhnh1412/NodeJs_projectss",
+      link: "https://github.com/quckhnh1412/Retailing_website",
     },
     {
       id: 4,
