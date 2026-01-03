@@ -83,7 +83,7 @@ const Hero = () => {
       <IconCloud  images={images} />
     </div>
     <div className="relative flex  max-w-lg justify-center overflow-hidden w-[300px] h-[300px]  bg-inherit rounded-full mr-48 ">
-      <img src="./portrait.png" className="w-full h-full object-cover opacity-[0.8]" 
+      <img src="./avata.png" className="w-full h-full object-cover opacity-[0.8]" 
     alt="Portrait" />
     </div>
         <div className="max-w-[95vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
